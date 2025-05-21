@@ -50,13 +50,13 @@
 
 ## 4. 시스템 아키텍처
 
-- 프론트엔드: Vue.js (Vite 기반), TypeScript
-- 백엔드: Spring Boot (MVC), Spring Security, JPA
-- 데이터베이스: MySQL (개발용 H2 지원)
-- 배포 환경:
-  - 프론트: Vercel, Netlify, 또는 Nginx
-  - 백엔드: Render, EC2, Oracle Cloud 등
-  - DB: PlanetScale, Supabase, RDS, 로컬 환경
+- **프론트엔드**: React, TypeScript, Vite, Axios, React Router
+- **백엔드**: Spring Boot (MVC), Spring Security, JPA
+- **데이터베이스**: MariaDB (개발 및 운영 환경 동일)
+- **배포 환경**:
+  - 프론트: 로컬 개발 → Vite Dev Server, 운영은 Nginx or OCI Load Balancer
+  - 백엔드: 로컬 Spring Boot → OCI 인스턴스에 JAR 배포
+  - DB: 로컬 MariaDB → OCI 상의 MariaDB 설치 또는 외부 RDS
 
 ---
 
